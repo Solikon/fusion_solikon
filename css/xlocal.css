@@ -1,0 +1,87 @@
+/* $Id: local-sample.css 6555 2010-02-24 20:21:15Z chris $ */
+
+/****************************/
+/* LOCAL CSS                */
+/****************************/
+
+/* Put your custom CSS and CSS overrides in this file and  */
+/* rename it local.css.  By restricting your CSS changes   */
+/* to local.css, your changes will not be overwritten when */
+/* upgrading to a new version of this theme.  You can also */
+/* use a local-rtl.css file for the equivalent in RTL.     */
+
+/* Steps to activate local.css:                       */
+/* 1. Add your custom CSS to this file                */
+/* 2. Rename this file to local.css                   */
+/* 3. Clear cached data at admin/settings/performance */
+
+h1 {
+  color: green;
+  font-family: "UbuntuTitling", Helvetica, Arial, sans-serif;
+  font-weight: bold;
+  font-size: 35px;
+  line-height: 39.2px;
+  margin-bottom: 0px;
+  margin-top: 15px;
+  vertical-align: baseline;
+}
+
+
+/* Drupal content tabs*/
+#content-tabs {
+  margin-top: 3.75px;
+  margin-bottom: 15px;
+  border-bottom: 1px solid rgba(74, 72, 68, 0.2);
+}
+
+#content-tabs .inner,
+#content tabs ul,
+.content-inner #content-tabs ul {
+  margin: 0;
+  height: 20px;
+}
+#content-tabs .inner :after,
+#content tabs ul :after,
+.content-inner #content-tabs ul :after {
+  clear: both;
+  content: ".";
+  display: block;
+  height: 0;
+  visibility: hidden;
+}
+
+#content-tabs ul li {
+  margin-bottom: -2px;
+  margin-right: 0;
+  margin-left: 0;
+  display: block;
+  float: left;
+}
+
+#content-tabs ul.primary li a:link,
+#content-tabs ul.secondary li a:link,
+#content-tabs ul li a {
+  background: transparent;
+  border: 1px solid rgba(74, 72, 68, 0.2);
+  border-radius: 2px 2px 0 0;
+  -moz-border-radius: 2px 2px 0 0;
+  -webkit-border-radius: 2px 2px 0 0;
+  font-size: 12px;
+  line-height: 13px;
+  padding: 4px 8px;
+  font-weight: normal;
+  color: #4a4844;
+  font-family: "Ubuntu", Arial, Helvetica, sans-serif;
+  display: block;
+}
+
+#content-tabs ul li.active a:link {
+  background-color: rgba(74, 72, 68, 0.2);
+}
+
+#content-tabs ul li a:hover,
+#content-tabs ul.primary li a:hover,
+#content-tabs ul li.secondary a:hover,
+#content-tabs ul li.active a:hover {
+  background-color: rgba(255, 255, 255, 0.6);
+}
